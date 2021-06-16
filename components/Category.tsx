@@ -35,7 +35,7 @@ const Category = () => {
 								<Box
 									as='button'
 									my={2}
-									mx={3}
+									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
 									border={'1px solid #ccc'}
 									borderRadius={'30px'}
@@ -60,7 +60,7 @@ const Category = () => {
 											fontSize={'lg'}
 											flexBasis={8}
 											fontWeight='bold'
-											display={{ sm: 'none', md: 'block' }}
+											display={{ base: 'none', md: 'block' }}
 										>
 											Pizza
 										</Text>
@@ -71,7 +71,7 @@ const Category = () => {
 								<Box
 									as='button'
 									my={2}
-									mx={3}
+									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
 									border={'1px solid #FEBD2E'}
 									bg='#FEBD2E'
@@ -96,7 +96,7 @@ const Category = () => {
 											fontSize={'lg'}
 											flexBasis={8}
 											fontWeight='bold'
-											display={{ sm: 'none', md: 'block' }}
+											display={{ base: 'none', md: 'block' }}
 										>
 											Dessert
 										</Text>
@@ -107,7 +107,7 @@ const Category = () => {
 								<Box
 									as='button'
 									my={2}
-									mx={3}
+									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
 									border={'1px solid #ccc'}
 									borderRadius={'30px'}
@@ -132,7 +132,7 @@ const Category = () => {
 											fontSize={'lg'}
 											flexBasis={8}
 											fontWeight='bold'
-											display={{ sm: 'none', md: 'block' }}
+											display={{ base: 'none', md: 'block' }}
 										>
 											Noodles
 										</Text>
@@ -143,7 +143,7 @@ const Category = () => {
 								<Box
 									as='button'
 									my={2}
-									mx={3}
+									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
 									border={'1px solid #ccc'}
 									borderRadius={'30px'}
@@ -168,7 +168,7 @@ const Category = () => {
 											fontSize={'lg'}
 											flexBasis={8}
 											fontWeight='bold'
-											display={{ sm: 'none', md: 'block' }}
+											display={{ base: 'none', md: 'block' }}
 										>
 											Cocktails
 										</Text>
@@ -179,7 +179,7 @@ const Category = () => {
 								<Box
 									as='button'
 									my={2}
-									mx={3}
+									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
 									border={'1px solid #ccc'}
 									borderRadius={'30px'}
@@ -204,7 +204,7 @@ const Category = () => {
 											fontSize={'lg'}
 											flexBasis={8}
 											fontWeight='bold'
-											display={{ sm: 'none', md: 'block' }}
+											display={{ base: 'none', md: 'block' }}
 										>
 											Salads
 										</Text>
@@ -213,8 +213,12 @@ const Category = () => {
 							</Center>
 						</Flex>
 					</Flex>
-					<Flex direction={'column'} width={{ base: '60%', sm: '100%' }}>
-						<Box width={{ sm: '100%', md: '60%' }} mt={2} alignSelf='flex-end'>
+					<Flex direction={'column'} width={{ base: '100%', md: '60%' }}>
+						<Box
+							width={{ base: '100%', md: '60%' }}
+							mt={2}
+							alignSelf='flex-end'
+						>
 							<SearchBar />
 						</Box>
 						<Flex justifyContent='space-between' direction={'column'} my={5}>

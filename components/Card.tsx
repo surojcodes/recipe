@@ -1,14 +1,10 @@
 import {
 	Heading,
-	Avatar,
 	Box,
-	Center,
 	Image,
 	Flex,
 	Text,
 	Stack,
-	Button,
-	Spacer,
 	useColorModeValue,
 } from '@chakra-ui/react'
 import { RiTimerFill } from 'react-icons/ri'
@@ -35,7 +31,15 @@ export default function Card() {
 					objectFit={'cover'}
 				/>
 			</Box>
-			<Flex ml={5} py={2} direction='column' alignContent='flex-end' p={5}>
+			<Flex
+				ml={5}
+				direction='column'
+				alignContent='center'
+				justifyContent='center'
+				pl={1}
+				pr={3}
+				py={2}
+			>
 				<Heading fontSize={'2xl'}>
 					<Text
 						as='a'
@@ -53,32 +57,27 @@ export default function Card() {
 					mt={2}
 					color='#aaa'
 					py={3}
-					display={{ sm: 'block', md: 'none', lg: 'block' }}
+					display={{ base: 'none', sm: 'block' }}
 				>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-					quo quae inventore nobis quia officiis nesciunt est similique impedit
-					blanditiis.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quam!
 				</Text>
 				<Flex
 					justifyContent='space-between'
-					direction={{ sm: 'row', md: 'column', lg: 'row' }}
-					mt={{ sm: '0.4rem', md: '2rem', lg: '0.4rem' }}
+					direction={{ base: 'column', sm: 'row' }}
+					mt={{ base: '1.5rem', sm: '0.4rem' }}
 				>
-					<Text mb={{ sm: '0.4rem', md: '1rem', lg: '0.4rem' }}>
+					<Box mb='0.2rem'>
 						{' '}
 						<Stack direction='row' color='#FEBD2E'>
 							<FaUser /> <FaUser /> <FaUser />
 						</Stack>
-					</Text>
-					<Text>
-						{' '}
-						<Stack direction='row' alignItems='center' alignContent='center'>
-							<Text as='span' color='#FEBD2E'>
-								<RiTimerFill />
-							</Text>{' '}
-							<Text> 3hr 30 min</Text>
-						</Stack>
-					</Text>
+					</Box>
+					<Stack direction='row' alignItems='center' alignContent='center'>
+						<Text as='span' color='#FEBD2E'>
+							<RiTimerFill />
+						</Text>{' '}
+						<Text as='span'> 3hr 30 min</Text>
+					</Stack>
 				</Flex>
 			</Flex>
 		</Flex>
