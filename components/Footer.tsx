@@ -81,17 +81,26 @@ export default function Footer() {
 			bg={useColorModeValue('gray.50', 'gray.900')}
 			color={useColorModeValue('gray.700', 'gray.200')}
 		>
-			<Container as={Stack} maxW={'6xl'} py={10}>
+			<Container as={Stack} maxW={'6xl'} py={10} textAlign='center'>
 				<SimpleGrid
 					templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
 					spacing={8}
 				>
-					<Stack spacing={6}>
-						<Box>
-							<Logo color={useColorModeValue('gray.700', 'white')} />
+					<Stack spacing={6} justify='center' align='center'>
+						<Box textAlign='center'>
+							<Logo
+								color={useColorModeValue('gray.700', 'white')}
+								display='block'
+								mx='auto'
+							/>
 						</Box>
 						<Text fontSize={'sm'}>© 2021 SurojCodes. All rights reserved</Text>
-						<Stack direction={'row'} spacing={6}>
+						<Stack
+							direction={'row'}
+							spacing={6}
+							justify='center'
+							align='center'
+						>
 							<SocialButton label={'Twitter'} href={'#'}>
 								<FaTwitter />
 							</SocialButton>
@@ -103,22 +112,22 @@ export default function Footer() {
 							</SocialButton>
 						</Stack>
 					</Stack>
-					<Stack align={'flex-start'}>
+					<Stack align={'flex-start'} display={{ base: 'none', md: 'flex' }}>
 						<ListHeader>Company</ListHeader>
 						<Link href={'#'}>About us</Link>
 						<Link href={'#'}>Contact us</Link>
 						<Link href={'#'}>Order Online</Link>
 						<Link href={'#'}>Recipies</Link>
 					</Stack>
-					<Stack align={'flex-start'}>
+					<Stack align={'flex-start'} display={{ base: 'none', md: 'flex' }}>
 						<ListHeader>Support</ListHeader>
 						<Link href={'#'}>Help Center</Link>
 						<Link href={'#'}>Terms of Service</Link>
 						<Link href={'#'}>Legal</Link>
 						<Link href={'#'}>Privacy Policy</Link>
 					</Stack>
-					<Stack align={'flex-start'}>
-						<ListHeader>Get remainders for new recipe</ListHeader>
+					<Stack justify='center' align='center'>
+						<ListHeader>Subscribe to recipe alerts</ListHeader>
 						<Stack direction={'row'}>
 							<Input
 								placeholder={'Your email address'}
