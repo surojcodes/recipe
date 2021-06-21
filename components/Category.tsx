@@ -21,7 +21,7 @@ const Category = () => {
 							<Box textAlign='center'>
 								<Text as='span' fontSize='3xl' fontWeight='bold'>
 									<Text as='span' color='#FEBD2E'>
-										Recipe
+										Popular
 									</Text>{' '}
 									Categories
 								</Text>
