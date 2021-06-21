@@ -2,6 +2,7 @@ import Hero from '../components/Hero'
 import NavBar from '../components/Navbar'
 import Category from '../components/Category'
 import Footer from '../components/Footer'
+import Latest from '../components/Latest'
 
 const Index = () => {
 	return (
@@ -9,6 +10,7 @@ const Index = () => {
 			<NavBar />
 			<Hero />
 			<Category />
+			<Latest />
 			<Footer />
 		</div>
 	)

@@ -222,8 +222,21 @@ const Category = () => {
 							<SearchBar />
 						</Box>
 						<Flex justifyContent='space-between' direction={'column'} my={5}>
-							<Card />
-							<Card />
+							<Card
+								title='Chicken Soup'
+								excerpt='The healthiest and tastiest soup you will ever try.'
+								time='2 hr 10min'
+								serving='3'
+								image='https://images.unsplash.com/photo-1604152135912-04a022e23696?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+							/>
+							<Card
+								title='Oreo Shake'
+								excerpt='Enjoy your summer with a chilled oreo shake. Sweet and tasty'
+								time='40min'
+								serving='1'
+								image='https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80'
+							/>
+
 							<Box textAlign='right'>
 								<a href='#' color='#242424'>
 									More Desserts....

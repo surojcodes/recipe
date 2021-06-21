@@ -11,14 +11,14 @@ import {
 } from '@chakra-ui/react'
 import { RiTimerFill } from 'react-icons/ri'
 import { FaUser } from 'react-icons/fa'
-export default function Card() {
+export default function Card({ title, excerpt, time, serving, image }) {
 	return (
 		<LinkBox>
 			<Flex
 				w={'full'}
 				bg={useColorModeValue('white', 'gray.800')}
-				boxShadow={'xl'}
-				rounded={'md'}
+				boxShadow={'2xl'}
+				rounded={'lg'}
 				overflow={'visible'}
 				h={'210px'}
 				my={2}
@@ -26,13 +26,8 @@ export default function Card() {
 					bg: '#FdFdFd',
 				}}
 			>
-				<Box basis='30%'>
-					<Image
-						h={'full'}
-						minW={'180px'}
-						src='/images/desserts.jpg'
-						objectFit={'cover'}
-					/>
+				<Box>
+					<Image h={'full'} minW={'230px'} src={image} objectFit={'cover'} />
 				</Box>
 				<Flex
 					ml={5}
@@ -45,7 +40,7 @@ export default function Card() {
 				>
 					<Heading fontSize={'2xl'}>
 						<LinkOverlay href='#' _hover={{ color: '#FEBD2E' }}>
-							Chocolate Cupcakes
+							{title}
 						</LinkOverlay>
 					</Heading>
 
@@ -56,24 +51,31 @@ export default function Card() {
 						py={3}
 						display={{ base: 'none', sm: 'block' }}
 					>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quam!
+						{excerpt}
 					</Text>
 					<Flex
-						justifyContent='space-between'
 						direction={{ base: 'column', sm: 'row' }}
 						mt={{ base: '1.5rem', sm: '0.4rem' }}
 					>
-						<Box mb='0.2rem'>
+						<Box mb='0.2rem' justifySelf='start' mr={5}>
 							{' '}
-							<Stack direction='row' color='#FEBD2E'>
-								<FaUser /> <FaUser /> <FaUser />
+							<Stack direction='row' alignItems='center' alignContent='center'>
+								<Text as='span' color='#FEBD2E'>
+									<FaUser />
+								</Text>
+								<Box> {serving}</Box>
 							</Stack>
 						</Box>
-						<Stack direction='row' alignItems='center' alignContent='center'>
+						<Stack
+							direction='row'
+							alignItems='center'
+							alignContent='center'
+							justifySelf='flex-end'
+						>
 							<Text as='span' color='#FEBD2E'>
 								<RiTimerFill />
 							</Text>{' '}
-							<Text as='span'> 3hr 30 min</Text>
+							<Text as='span'> {time}</Text>
 						</Stack>
 					</Flex>
 				</Flex>
