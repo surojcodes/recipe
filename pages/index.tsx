@@ -7,11 +7,9 @@ import Latest from '../components/Latest'
 const Index = () => {
 	return (
 		<div>
-			<NavBar />
 			<Hero />
 			<Category />
 			<Latest />
-			<Footer />
 		</div>
 	)
 }
