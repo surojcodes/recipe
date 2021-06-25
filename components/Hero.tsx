@@ -20,7 +20,7 @@ export default function Hero() {
 				align={'center'}
 				spacing={{ base: 8, md: 10 }}
 				py={{ base: 17, md: 17 }}
-				direction={{ base: 'column', lg: 'row' }}
+				direction={{ base: 'column', md: 'row' }}
 			>
 				<Stack flex={1} spacing={{ base: 5, md: 10 }} my={5}>
 					<Heading
@@ -90,7 +90,7 @@ export default function Hero() {
 					align={'center'}
 					position={'relative'}
 					w={'full'}
-					display={{ base: 'none', lg: 'block' }}
+					display={{ base: 'none', md: 'block', lg: 'block' }}
 				>
 					<Center>
 						<Image src='/images/cooking_hero.png' width={350} height={350} />
