@@ -276,20 +276,24 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
+	// {
+	// 	label: 'Shop',
+	// 	children: [
+	// 		{
+	// 			label: 'Bakery',
+	// 			subLabel: 'Get fluffy goodness',
+	// 			href: '#',
+	// 		},
+	// 		{
+	// 			label: 'Lunch',
+	// 			subLabel: 'Homemade lunch for you',
+	// 			href: '#',
+	// 		},
+	// 	],
+	// },
 	{
-		label: 'Shop',
-		children: [
-			{
-				label: 'Bakery',
-				subLabel: 'Get fluffy goodness',
-				href: '#',
-			},
-			{
-				label: 'Lunch',
-				subLabel: 'Homemade lunch for you',
-				href: '#',
-			},
-		],
+		label: 'Home',
+		href: '/',
 	},
 	{
 		label: 'Recipes',
@@ -315,6 +319,6 @@ const NAV_ITEMS: Array<NavItem> = [
 	},
 	{
 		label: 'About',
-		href: '#',
+		href: '/about',
 	},
 ]
