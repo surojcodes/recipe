@@ -22,7 +22,7 @@ export default function Hero() {
 				py={{ base: 17, md: 17 }}
 				direction={{ base: 'column', lg: 'row' }}
 			>
-				<Stack flex={1} spacing={{ base: 5, md: 10 }}>
+				<Stack flex={1} spacing={{ base: 5, md: 10 }} my={5}>
 					<Heading
 						lineHeight={1.1}
 						fontWeight={600}
@@ -42,11 +42,11 @@ export default function Hero() {
 								zIndex: -1,
 							}}
 						>
-							Let's Cook,
+							Recipe Book
 						</Text>
 						<br />
-						<Text as={'span'} color={'#FEBD2E'} fontSize='4xl'>
-							be your own chef!
+						<Text as={'span'} color={'#FEBD2E'} fontSize='2xl'>
+							Let's Cook, be your own chef!
 						</Text>
 					</Heading>
 					<Text color={'gray.700'}>

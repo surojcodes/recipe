@@ -52,7 +52,11 @@ export default function NavBar() {
 						aria-label={'Toggle Navigation'}
 					/>
 				</Flex>
-				<Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+				<Flex
+					flex={{ base: 1 }}
+					justify={{ base: 'center', md: 'start' }}
+					display={{ base: 'none', sm: 'inline-flex' }}
+				>
 					<Text
 						textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
 						fontFamily={'heading'}
@@ -85,7 +89,8 @@ export default function NavBar() {
 						Sign In
 					</Button>
 					<Button
-						display={{ base: 'none', md: 'inline-flex' }}
+						as={'a'}
+						display='inline-flex'
 						fontSize={'sm'}
 						fontWeight={600}
 						color={'white'}
