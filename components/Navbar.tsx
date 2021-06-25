@@ -79,7 +79,7 @@ export default function NavBar() {
 						fontSize={'sm'}
 						fontWeight={400}
 						variant={'link'}
-						href={'#'}
+						href={'/login'}
 						color='#242424'
 					>
 						Sign In
