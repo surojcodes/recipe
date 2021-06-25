@@ -13,7 +13,7 @@ import {
 	useColorModeValue,
 } from '@chakra-ui/react'
 
-export default function SimpleCard() {
+export default function Login() {
 	return (
 		<Flex minH={'65vh'} align={'center'} justify={'center'}>
 			<Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
