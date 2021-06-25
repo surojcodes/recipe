@@ -37,8 +37,9 @@ const Category = () => {
 									my={2}
 									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
-									border={'1px solid #ccc'}
+									border={'1px solid #dee'}
 									borderRadius={'30px'}
+									boxShadow={'xl'}
 									_hover={{
 										bg: '#FEBD2E',
 										borderColor: '#FEBD2E',
@@ -51,6 +52,7 @@ const Category = () => {
 											p={2}
 											bg={'white'}
 											flexBasis={3}
+											boxShadow={'2xl'}
 										>
 											<FaPizzaSlice size='1.5rem' />
 										</Box>
@@ -75,6 +77,7 @@ const Category = () => {
 									width={{ sm: '60px', md: '180px' }}
 									border={'1px solid #FEBD2E'}
 									bg='#FEBD2E'
+									boxShadow={'xl'}
 									borderRadius={'30px'}
 									_hover={{
 										borderColor: '#ccc',
@@ -109,7 +112,8 @@ const Category = () => {
 									my={2}
 									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
-									border={'1px solid #ccc'}
+									border={'1px solid #dee'}
+									boxShadow={'xl'}
 									borderRadius={'30px'}
 									_hover={{
 										bg: '#FEBD2E',
@@ -145,7 +149,8 @@ const Category = () => {
 									my={2}
 									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
-									border={'1px solid #ccc'}
+									border={'1px solid #dee'}
+									boxShadow={'xl'}
 									borderRadius={'30px'}
 									_hover={{
 										bg: '#FEBD2E',
@@ -181,7 +186,8 @@ const Category = () => {
 									my={2}
 									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
-									border={'1px solid #ccc'}
+									border={'1px solid #dee'}
+									boxShadow={'xl'}
 									borderRadius={'30px'}
 									_hover={{
 										bg: '#FEBD2E',

@@ -91,6 +91,7 @@ export default function NavBar() {
 						color={'white'}
 						bg='#FEBD2E'
 						href={'#'}
+						boxShadow={'xl'}
 						_hover={{
 							bg: '#242424',
 						}}

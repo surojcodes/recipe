@@ -63,6 +63,7 @@ export default function Hero() {
 							px={6}
 							colorScheme={'red'}
 							bg={'#FEBD2E'}
+							boxShadow={'2xl'}
 							_hover={{ bg: '#f1a401' }}
 							leftIcon={<PlayIcon h={4} w={4} color={'white'} />}
 						>
@@ -73,6 +74,7 @@ export default function Hero() {
 							size={'lg'}
 							fontWeight={'normal'}
 							colorScheme={'red'}
+							boxShadow={'2xl'}
 							px={6}
 							bg={'#242424'}
 							_hover={{ bg: '#404040' }}
