@@ -296,7 +296,7 @@ const NAV_ITEMS: Array<NavItem> = [
 		href: '/',
 	},
 	{
-		label: 'Recipes',
+		label: 'Categories',
 		children: [
 			{
 				label: 'Dessert',
@@ -309,9 +309,6 @@ const NAV_ITEMS: Array<NavItem> = [
 				href: '#',
 			},
 		],
-	},
-	{
-		label: 'Categories',
 	},
 	{
 		label: 'Contact',

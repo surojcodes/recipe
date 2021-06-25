@@ -10,7 +10,7 @@ import {
 	IconProps,
 	Center,
 } from '@chakra-ui/react'
-import { FaPizzaSlice } from 'react-icons/fa'
+import { FaRandom } from 'react-icons/fa'
 import Image from 'next/image'
 
 export default function Hero() {
@@ -76,9 +76,9 @@ export default function Hero() {
 							px={6}
 							bg={'#242424'}
 							_hover={{ bg: '#404040' }}
-							leftIcon={<FaPizzaSlice />}
+							leftIcon={<FaRandom />}
 						>
-							Order Now
+							Random Recipe
 						</Button>
 					</Stack>
 				</Stack>
