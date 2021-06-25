@@ -307,12 +307,7 @@ const NAV_ITEMS: Array<NavItem> = [
 			{
 				label: 'Dessert',
 				subLabel: 'Sweet and soft joy',
-				href: '#',
-			},
-			{
-				label: 'Pizzas',
-				subLabel: 'Extra cheesy, crusty godness',
-				href: '#',
+				href: '/category/dessert',
 			},
 		],
 	},

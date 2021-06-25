@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react'
 import { FaPizzaSlice, FaCocktail } from 'react-icons/fa'
 import { GiCakeSlice, GiNoodles, GiFruitBowl } from 'react-icons/gi'
-import Card from './Card'
+import Card from './HeroCard'
 import SearchBar from './SearchBar'
 const Category = () => {
 	return (
@@ -33,7 +33,8 @@ const Category = () => {
 						>
 							<Center>
 								<Box
-									as='button'
+									as='a'
+									href='/category/pizza'
 									my={2}
 									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
@@ -71,7 +72,8 @@ const Category = () => {
 							</Center>
 							<Center>
 								<Box
-									as='button'
+									as='a'
+									href='/category/dessert'
 									my={2}
 									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
@@ -108,7 +110,8 @@ const Category = () => {
 							</Center>
 							<Center>
 								<Box
-									as='button'
+									as='a'
+									href='/category/noodles'
 									my={2}
 									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
@@ -145,7 +148,8 @@ const Category = () => {
 							</Center>
 							<Center>
 								<Box
-									as='button'
+									as='a'
+									href='/category/cocktails'
 									my={2}
 									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
@@ -182,7 +186,8 @@ const Category = () => {
 							</Center>
 							<Center>
 								<Box
-									as='button'
+									as='a'
+									href='/category/salad'
 									my={2}
 									mx={{ base: '0.3rem', sm: '1rem' }}
 									width={{ sm: '60px', md: '180px' }}
@@ -244,7 +249,7 @@ const Category = () => {
 							/>
 
 							<Box textAlign='right'>
-								<a href='#' color='#242424'>
+								<a href='/category/dessert' color='#242424'>
 									More Desserts....
 								</a>
 								<style jsx>{`

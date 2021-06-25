@@ -8,7 +8,7 @@ import {
 	Text,
 } from '@chakra-ui/react'
 
-import LatestCard from '../components/LatestCard'
+import RecipeCard from './RecipeCard'
 const Latest = () => {
 	return (
 		<>
@@ -34,7 +34,7 @@ const Latest = () => {
 					mt={4}
 				>
 					<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
-						<LatestCard
+						<RecipeCard
 							category='Dessert'
 							title='Honey Pancake'
 							time='1 hr 10 min'
@@ -42,7 +42,7 @@ const Latest = () => {
 						/>
 					</Box>
 					<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
-						<LatestCard
+						<RecipeCard
 							category='Main Course'
 							title='Pesto Pasta'
 							time='1 hr 30 min'
@@ -50,7 +50,7 @@ const Latest = () => {
 						/>
 					</Box>
 					<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
-						<LatestCard
+						<RecipeCard
 							category='Dessert'
 							title='Strawberry Cake'
 							time='2 hr 30 min'
@@ -58,7 +58,7 @@ const Latest = () => {
 						/>
 					</Box>
 					<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
-						<LatestCard
+						<RecipeCard
 							category='Fish'
 							title='Lemon Salmon'
 							time='1 hr 5 mins'
