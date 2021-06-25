@@ -90,7 +90,7 @@ export default function NavBar() {
 						fontWeight={600}
 						color={'white'}
 						bg='#FEBD2E'
-						href={'#'}
+						href={'/register'}
 						boxShadow={'xl'}
 						_hover={{
 							bg: '#242424',
