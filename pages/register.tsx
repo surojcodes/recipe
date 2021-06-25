@@ -18,13 +18,7 @@ export default function Register() {
 		<Flex minH={'65vh'} align={'center'} justify={'center'}>
 			<Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
 				<Stack align={'center'}>
-					<Heading fontSize={'4xl'}>
-						{' '}
-						<Text as='span' color='#FEBD2E'>
-							Sign up
-						</Text>{' '}
-						for a new account
-					</Heading>
+					<Heading fontSize={'4xl'}>Sign up</Heading>
 					<Text fontSize={'lg'} color={'gray.600'}>
 						to enjoy all of our cool <Link color={'#FEBD2E'}>features</Link> ✌️
 					</Text>
