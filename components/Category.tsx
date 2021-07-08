@@ -1,8 +1,8 @@
 import { Center, Container, Flex, Text, Box } from '@chakra-ui/react'
 import { FaPizzaSlice, FaCocktail } from 'react-icons/fa'
 import { GiCakeSlice, GiNoodles, GiFruitBowl } from 'react-icons/gi'
-import Card from './HeroCard'
 import SearchBar from './SearchBar'
+import Card from './Card'
 const Category = () => {
 	return (
 		<Box bg='gray.50' py={10}>
@@ -216,7 +216,7 @@ const Category = () => {
 							</Center>
 						</Flex>
 					</Flex>
-					<Flex direction={'column'} width={{ base: '100%', md: '60%' }}>
+					<Flex direction={'column'} width={{ base: '100%' }}>
 						<Box
 							width={{ base: '100%', md: '60%' }}
 							mt={2}
@@ -224,8 +224,13 @@ const Category = () => {
 						>
 							<SearchBar />
 						</Box>
-						<Flex justifyContent='space-between' direction={'column'} my={5}>
-							<Card
+						<Flex
+							justifyContent='space-evenly'
+							direction={'row'}
+							my={5}
+							wrap={'wrap'}
+						>
+							{/* <Card
 								title='Chicken Soup'
 								excerpt='The healthiest and tastiest soup you will ever try.'
 								time='2 hr 10min'
@@ -240,19 +245,22 @@ const Category = () => {
 								serving='1'
 								image='https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80'
 								slug='oreo-shake'
-							/>
-
-							<Box textAlign='right'>
-								<a href='/category/dessert' color='#242424'>
-									More Desserts....
-								</a>
-								<style jsx>{`
-									a:hover {
-										text-decoration: underline;
-									}
-								`}</style>
-							</Box>
+							/> */}
+							<Card />
+							<Card />
+							<Card />
+							<Card />
 						</Flex>
+						<Box textAlign='right'>
+							<a href='/category/dessert' color='#242424'>
+								More Desserts....
+							</a>
+							<style jsx>{`
+								a:hover {
+									text-decoration: underline;
+								}
+							`}</style>
+						</Box>
 					</Flex>
 				</Flex>
 			</Container>

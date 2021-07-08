@@ -10,7 +10,7 @@ import {
 	Button,
 } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
-import RecipeCard from '../../components/RecipeCard'
+import HomeLatestCard from '../../components/HomeLatestCard'
 const category = () => {
 	const router = useRouter()
 	const { slug } = router.query
@@ -62,7 +62,7 @@ const category = () => {
 				mt={4}
 			>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
-					<RecipeCard
+					<HomeLatestCard
 						category='Dessert'
 						title='Honey Pancake'
 						time='1 hr 10 min'
@@ -71,7 +71,7 @@ const category = () => {
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
-					<RecipeCard
+					<HomeLatestCard
 						category='Main Course'
 						title='Pesto Pasta'
 						time='1 hr 30 min'
@@ -80,7 +80,7 @@ const category = () => {
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
-					<RecipeCard
+					<HomeLatestCard
 						category='Dessert'
 						title='Strawberry Cake'
 						time='2 hr 30 min'
@@ -89,7 +89,7 @@ const category = () => {
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
-					<RecipeCard
+					<HomeLatestCard
 						category='Fish'
 						title='Lemon Salmon'
 						time='1 hr 5 mins'
@@ -98,7 +98,7 @@ const category = () => {
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
-					<RecipeCard
+					<HomeLatestCard
 						category='Salad'
 						title='Egg Salad'
 						time='1 hr'
@@ -107,7 +107,7 @@ const category = () => {
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
-					<RecipeCard
+					<HomeLatestCard
 						category='Ramen'
 						title='Soupy Ramen'
 						time='3 hr 50 mins'
@@ -116,7 +116,7 @@ const category = () => {
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
-					<RecipeCard
+					<HomeLatestCard
 						category='Kebeb'
 						title='Pork Kebab'
 						time='2 hr 9 mins'
@@ -125,7 +125,7 @@ const category = () => {
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
-					<RecipeCard
+					<HomeLatestCard
 						category='Dessert'
 						title='Chocolate Bread'
 						time='3 hr 5 mins'

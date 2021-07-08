@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 import { StarIcon } from '@chakra-ui/icons'
 import { useRouter } from 'next/router'
-import SingleLatestCard from '../../components/SingleLatestCard'
+import Card from '../../components/Card'
 const SingleRecipe = () => {
 	const router = useRouter()
 	const { slug } = router.query
@@ -36,9 +36,9 @@ const SingleRecipe = () => {
 					</Heading>
 					<Flex w='full' alignItems='center'>
 						<Flex direction='column'>
-							<SingleLatestCard />
-							<SingleLatestCard />
-							<SingleLatestCard />
+							<Card />
+							<Card />
+							<Card />
 						</Flex>
 					</Flex>
 				</Box>
