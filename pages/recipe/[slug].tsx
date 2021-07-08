@@ -25,7 +25,7 @@ const SingleRecipe = () => {
 	return (
 		<Container maxW={'90vw'} my={'5rem'}>
 			<Flex>
-				<Box flexBasis={{ base: '100%', md: '70%' }} px={5} mr={5}>
+				<Box flexBasis={{ base: '100%', md: '70%' }} px={3} mx={4}>
 					<Heading
 						as={'span'}
 						position={'relative'}
@@ -150,19 +150,19 @@ const SingleRecipe = () => {
 					<Heading size='md' my={5}>
 						Recipe Tags :
 					</Heading>
-					<Tag mr={2} bg={'#FEBD2E'}>
+					<Tag mr={2} my={2} bg={'#FEBD2E'}>
 						fish
 					</Tag>
-					<Tag mr={2} bg={'#FEBD2E'}>
+					<Tag mr={2} my={2} bg={'#FEBD2E'}>
 						spicy
 					</Tag>
-					<Tag mr={2} bg={'#FEBD2E'}>
+					<Tag mr={2} my={2} bg={'#FEBD2E'}>
 						seafood
 					</Tag>
-					<Tag mr={2} bg={'#FEBD2E'}>
+					<Tag mr={2} my={2} bg={'#FEBD2E'}>
 						curry
 					</Tag>
-					<Tag mr={2} bg={'#FEBD2E'}>
+					<Tag mr={2} my={2} bg={'#FEBD2E'}>
 						indian
 					</Tag>
 					<HStack>
