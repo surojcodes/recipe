@@ -1,12 +1,4 @@
-import {
-	Button,
-	Center,
-	Container,
-	Flex,
-	Spacer,
-	Text,
-	Box,
-} from '@chakra-ui/react'
+import { Center, Container, Flex, Text, Box } from '@chakra-ui/react'
 import { FaPizzaSlice, FaCocktail } from 'react-icons/fa'
 import { GiCakeSlice, GiNoodles, GiFruitBowl } from 'react-icons/gi'
 import Card from './HeroCard'
@@ -239,6 +231,7 @@ const Category = () => {
 								time='2 hr 10min'
 								serving='3'
 								image='https://images.unsplash.com/photo-1604152135912-04a022e23696?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+								slug='chicken-soup'
 							/>
 							<Card
 								title='Oreo Shake'
@@ -246,6 +239,7 @@ const Category = () => {
 								time='40min'
 								serving='1'
 								image='https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80'
+								slug='oreo-shake'
 							/>
 
 							<Box textAlign='right'>

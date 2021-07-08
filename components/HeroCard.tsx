@@ -8,10 +8,13 @@ import {
 	useColorModeValue,
 	LinkOverlay,
 	LinkBox,
+	HStack,
 } from '@chakra-ui/react'
 import { RiTimerFill } from 'react-icons/ri'
 import { FaUser } from 'react-icons/fa'
-export default function Card({ title, excerpt, time, serving, image }) {
+import { StarIcon } from '@chakra-ui/icons'
+
+export default function Card({ title, excerpt, time, serving, image, slug }) {
 	return (
 		<LinkBox>
 			<Flex
@@ -39,11 +42,17 @@ export default function Card({ title, excerpt, time, serving, image }) {
 					py={2}
 				>
 					<Heading fontSize={'2xl'}>
-						<LinkOverlay href='#' _hover={{ color: '#FEBD2E' }}>
+						<LinkOverlay href={`/recipe/${slug}`} _hover={{ color: '#FEBD2E' }}>
 							{title}
 						</LinkOverlay>
 					</Heading>
-
+					<HStack spacing={1} display='flex' alignItems='center' mt={2}>
+						<StarIcon color={'#FEBD2E'} />
+						<StarIcon color={'#FEBD2E'} />
+						<StarIcon color={'#FEBD2E'} />
+						<StarIcon color='gray.500' />
+						<StarIcon color='gray.500' />
+					</HStack>
 					<Text
 						alignItems='justify'
 						mt={2}
@@ -53,6 +62,7 @@ export default function Card({ title, excerpt, time, serving, image }) {
 					>
 						{excerpt}
 					</Text>
+
 					<Flex
 						direction={{ base: 'column', sm: 'row' }}
 						mt={{ base: '1.5rem', sm: '0.4rem' }}

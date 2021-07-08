@@ -8,9 +8,12 @@ import {
 	Image,
 	LinkBox,
 	LinkOverlay,
+	HStack,
 } from '@chakra-ui/react'
 import { RiTimerFill } from 'react-icons/ri'
-export default function LatestCard({ image, title, category, time }) {
+import { StarIcon } from '@chakra-ui/icons'
+
+export default function LatestCard({ image, title, category, time, slug }) {
 	return (
 		<LinkBox>
 			<Center py={12}>
@@ -66,10 +69,20 @@ export default function LatestCard({ image, title, category, time }) {
 						</Text>
 
 						<Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-							<LinkOverlay href='#' _hover={{ color: '#FEBD2E' }}>
+							<LinkOverlay
+								href={`/recipe/${slug}`}
+								_hover={{ color: '#FEBD2E' }}
+							>
 								{title}
 							</LinkOverlay>
 						</Heading>
+						<HStack spacing={1} display='flex' alignItems='center' mt={2}>
+							<StarIcon color={'#FEBD2E'} />
+							<StarIcon color={'#FEBD2E'} />
+							<StarIcon color={'#FEBD2E'} />
+							<StarIcon color='gray.500' />
+							<StarIcon color='gray.500' />
+						</HStack>
 						<Stack direction={'row'} align={'center'}>
 							<Text as='span' color='#FEBD2E'>
 								<RiTimerFill />

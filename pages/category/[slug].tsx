@@ -67,6 +67,7 @@ const category = () => {
 						title='Honey Pancake'
 						time='1 hr 10 min'
 						image='https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2028&q=80'
+						slug='honey-pancake'
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
@@ -75,6 +76,7 @@ const category = () => {
 						title='Pesto Pasta'
 						time='1 hr 30 min'
 						image='https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+						slug='pesto-pasta'
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
@@ -83,6 +85,7 @@ const category = () => {
 						title='Strawberry Cake'
 						time='2 hr 30 min'
 						image='https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=701&q=80'
+						slug='strawberry-cake'
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
@@ -91,6 +94,7 @@ const category = () => {
 						title='Lemon Salmon'
 						time='1 hr 5 mins'
 						image='https://images.unsplash.com/photo-1601314002592-b8734bca6604?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80'
+						slug='lemon-salmon'
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
@@ -99,6 +103,7 @@ const category = () => {
 						title='Egg Salad'
 						time='1 hr'
 						image='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80'
+						slug='egg-salad'
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
@@ -107,6 +112,7 @@ const category = () => {
 						title='Soupy Ramen'
 						time='3 hr 50 mins'
 						image='https://images.unsplash.com/photo-1547928578-bca3e9c5a0ab?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHJlY2lwZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+						slug='soupy-ramen'
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
@@ -115,6 +121,7 @@ const category = () => {
 						title='Pork Kebab'
 						time='2 hr 9 mins'
 						image='https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=675&q=80'
+						slug='pork-kebab'
 					/>
 				</Box>
 				<Box flexBasis={{ base: '90%', md: '40%', lg: '23%' }} my={4}>
@@ -123,6 +130,7 @@ const category = () => {
 						title='Chocolate Bread'
 						time='3 hr 5 mins'
 						image='https://images.unsplash.com/photo-1606101205927-c0fed0edc7fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
+						slug='chocolate-bread'
 					/>
 				</Box>
 			</Flex>
