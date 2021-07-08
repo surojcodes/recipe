@@ -165,24 +165,22 @@ const SingleRecipe = () => {
 					<Tag mr={2} my={2} bg={'#FEBD2E'}>
 						indian
 					</Tag>
-					<HStack>
-						<Heading size='md' my={5}>
-							Rating :
-						</Heading>
-						<HStack
-							spacing={1}
-							display='flex'
-							alignItems='center'
-							mt={2}
-							as='span'
-						>
-							<StarIcon color={'#FEBD2E'} />
-							<StarIcon color={'#FEBD2E'} />
-							<StarIcon color={'#FEBD2E'} />
-							<StarIcon color='gray.500' />
-							<StarIcon color='gray.500' />
-							<Text as='span'> &nbsp;(4,532 ratings)</Text>
-						</HStack>
+					<Heading size='md' my={5}>
+						Rating :
+					</Heading>
+					<HStack
+						spacing={1}
+						display='flex'
+						alignItems='center'
+						mt={2}
+						as='span'
+					>
+						<StarIcon color={'#FEBD2E'} />
+						<StarIcon color={'#FEBD2E'} />
+						<StarIcon color={'#FEBD2E'} />
+						<StarIcon color='gray.500' />
+						<StarIcon color='gray.500' />
+						<Text as='span'> &nbsp;(4,532 ratings)</Text>
 					</HStack>
 				</Box>
 				<Box
